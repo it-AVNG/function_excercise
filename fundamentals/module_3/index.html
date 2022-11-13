@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add7(num){
+            return num+7;
+        }
+
+        function multiply(n,m){
+            return n*m;
+        }
+
+        function checkString(string){
+            if (typeof(string)==='string' || string instanceof String){
+                return true;
+            } else {
+                return false;
+                alert('not a string');             
+            }
+        }
+
+        function capitalize(string){
+            if (checkString(string)){
+                let results = string.toLowerCase();
+                return results.charAt(0).toUpperCase() + results.slice(1);
+            }
+        }
+
+        function lastLetter(string){
+            if(checkString(string)){
+                let l = string.length;
+                return string.charAt(l-1);
+            }
+
+        }
+
+
+    </script>
+</body>
+</html>
